@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="allide" x1="12" y1="10" x2="50" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1f4d" />
+      <stop offset="0.5" stop-color="#1d4ed8" />
+      <stop offset="1" stop-color="#60a5fa" />
+    </linearGradient>
+    <linearGradient id="rujugira" x1="18" y1="48" x2="54" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dc2626" />
+      <stop offset="1" stop-color="#2563eb" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#070b16" />
+  <path d="M18 46 32 15l14 31" fill="none" stroke="url(#allide)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24 37h16" stroke="url(#rujugira)" stroke-width="4" stroke-linecap="round" />
+  <circle cx="46" cy="18" r="4" fill="#dc2626" />
+</svg>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#070b16" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta
+      name="description"
+      content="Allide' Ru.Ju.Gi.Ra — Web & Software Developer. A portfolio of thoughtful websites, applications, and software built with React, Node.js, Laravel, and Flutter."
+    />
+    <meta property="og:title" content="Allide' Ru.Ju.Gi.Ra — Web & Software Developer" />
+    <meta
+      property="og:description"
+      content="A portfolio of thoughtful websites, applications, and software."
+    />
+    <meta property="og:type" content="website" />
+    <title>Allide' Ru.Ju.Gi.Ra — Web & Software Developer</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('allide-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = stored ? stored === 'dark' : prefersDark;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

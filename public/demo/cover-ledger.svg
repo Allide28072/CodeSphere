@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#f0ede5" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e88b63" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#e88b63" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#151613"/>
+  <rect width="1600" height="1000" fill="url(#grid)"/>
+  <circle cx="1210" cy="270" r="330" fill="url(#glow)"/>
+  <circle cx="1210" cy="270" r="188" fill="none" stroke="#e88b63" stroke-width="1.5" stroke-opacity="0.7"/>
+  <circle cx="1210" cy="270" r="5" fill="#e88b63"/>
+  <g stroke="#f0ede5" stroke-opacity="0.18" stroke-width="1">
+    <path d="M1040 720V520"/><path d="M1120 720V440"/><path d="M1200 720V580"/><path d="M1280 720V370"/><path d="M1360 720V470"/>
+  </g>
+  <g fill="#e88b63" fill-opacity="0.85">
+    <rect x="1032" y="620" width="16" height="100" rx="8"/>
+    <rect x="1112" y="520" width="16" height="200" rx="8"/>
+    <rect x="1192" y="640" width="16" height="80" rx="8"/>
+    <rect x="1272" y="410" width="16" height="310" rx="8"/>
+    <rect x="1352" y="540" width="16" height="180" rx="8"/>
+  </g>
+  <text x="110" y="160" fill="#f0ede5" fill-opacity="0.55" font-family="'Courier New', monospace" font-size="22" letter-spacing="6">CASE STUDY / 01</text>
+  <text x="104" y="520" fill="#f0ede5" font-family="Georgia, 'Times New Roman', serif" font-size="260" letter-spacing="-8">Ledger</text>
+  <text x="112" y="590" fill="#f0ede5" fill-opacity="0.62" font-family="Inter, Arial, sans-serif" font-size="28" letter-spacing="1">Personal finance, without the noise.</text>
+  <path d="M112 660H640" stroke="#e88b63" stroke-width="2"/>
+  <text x="112" y="730" fill="#e88b63" font-family="'Courier New', monospace" font-size="20" letter-spacing="3">REACT · NODE.JS · POSTGRESQL</text>
+  <text x="112" y="900" fill="#f0ede5" fill-opacity="0.4" font-family="'Courier New', monospace" font-size="18" letter-spacing="4">ALLIDE’ RU.JU.GI.RA</text>
+</svg>
