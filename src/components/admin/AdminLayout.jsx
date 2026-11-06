@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import {
   AlertCircle,
@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 import { ADMIN_NAV } from '../../lib/constants';
 import { useAuth } from '../../context/AuthContext';
-import { InlineSpinner } from '../Loader';
+import Loader, { InlineSpinner } from '../Loader';
 import Logo from '../Logo';
 
 const ICONS = {
@@ -199,7 +199,9 @@ export default function AdminLayout() {
           </div>
         ) : null}
         <main className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 lg:py-10">
-          <Outlet />
+          <Suspense fallback={<Loader label="Loading panel" />}>
+            <Outlet />
+          </Suspense>
         </main>
       </div>
     </div>

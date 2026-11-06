@@ -1,5 +1,7 @@
+import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
+import Loader from './Loader';
 import Navbar from './Navbar';
 import PreviewBanner from './PreviewBanner';
 
@@ -15,7 +17,9 @@ export default function PublicLayout() {
       <PreviewBanner />
       <Navbar />
       <main id="main-content" className="flex-1">
-        <Outlet />
+        <Suspense fallback={<Loader label="Loading page" />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
     </div>
